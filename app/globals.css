@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-background: #0a0e1a;
+  --color-foreground: #ffffff;
+
+  --color-primary: #00ff87;
+  --color-primary-dark: #00cc6d;
+  --color-primary-light: #33ffaa;
+
+  --color-dark: #0a0e1a;
+  --color-dark-lighter: #141b2e;
+  --color-dark-card: #1a2235;
+  --color-dark-border: #2a3547;
+
+  /* Border Radius */
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+
+  /* Shadows */
+  --shadow-glow: 0 0 20px rgba(0, 255, 135, 0.3);
+  --shadow-glow-lg: 0 0 40px rgba(0, 255, 135, 0.4);
+}
+
+:root {
+  --background: #0a0e1a;
+  --foreground: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.8;
+}
+
+/* 标题行高和间距 */
+h1 {
+  line-height: 1.3;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+h2 {
+  line-height: 1.3;
+  margin-top: 1.2em;
+  margin-bottom: 0.8em;
+}
+
+h3, h4, h5, h6 {
+  line-height: 1.4;
+  margin-top: 1em;
+  margin-bottom: 0.6em;
+}
+
+/* 段落间距 */
+p {
+  line-height: 2;
+  margin-bottom: 1.5em;
+}
+
+/* 列表间距 */
+ul, ol {
+  line-height: 2;
+  margin-bottom: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* 按钮和小文字 */
+button, .text-sm {
+  line-height: 1.6;
+}
+
+/* 卡片和区块间距 */
+section {
+  margin-bottom: 3rem;
+}
+
+/* 通用间距 */
+.space-y-4 > * + * {
+  margin-top: 1.5rem;
+}
+
+.space-y-6 > * + * {
+  margin-top: 2rem;
+}
+
+.space-y-8 > * + * {
+  margin-top: 2.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 统一容器边距 */
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a3547;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff87;
+}
