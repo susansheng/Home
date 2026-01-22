@@ -15,6 +15,20 @@ export interface Tool {
 
 export const tools: Tool[] = [
   {
+    id: "portfolio-website",
+    name: "我的工具集网站",
+    description: "个人工具展示平台，集中管理和展示所有开发项目的信息和链接",
+    longDescription: "基于 Next.js 15 和 TypeScript 构建的现代化工具展示网站。支持响应式布局，提供工具卡片展示和详细清单视图。采用 Tailwind CSS 设计系统，深色主题界面。部署在 Vercel 上，支持自动化部署和更新。",
+    image: "https://placehold.co/600x400/00ff87/0a0e1a?text=Portfolio+Website",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Vercel"],
+    demoUrl: "https://portfolio-website-seven-theta-54.vercel.app",
+    sourceUrl: "https://github.com/susansheng/Home",
+    githubUrl: "https://github.com/susansheng/Home",
+    vercelUrl: "https://portfolio-website-seven-theta-54.vercel.app",
+    localPath: "/Users/sxsheng/Documents/代码/汇总/portfolio-website",
+    featured: true,
+  },
+  {
     id: "ocr-tool",
     name: "字号检测工具",
     description: "专业级UI设计稿字号检测工具，精确检测字号、字重、行高、字间距和颜色",
