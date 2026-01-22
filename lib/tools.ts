@@ -84,6 +84,20 @@ export const tools: Tool[] = [
     localPath: "/Users/sxsheng/Documents/代码/其他杂七杂八的",
     featured: true,
   },
+  {
+    id: "design-qa-tool",
+    name: "设计验收对比工具",
+    description: "专业的UI设计稿与开发实现像素级对比验收工具，支持三种对比模式和自动化报告生成",
+    longDescription: "基于纯前端技术栈的设计验收工具。提供滑块对比、差异高亮、测量标注三种模式，支持像素级精度验收。自动计算验收得分，生成图文报告支持导出为PDF或长图。基于750px设计基准，适用于移动端和响应式界面验收。",
+    image: "https://placehold.co/600x400/00ff87/0a0e1a?text=Design+QA+Tool",
+    tags: ["HTML5", "Canvas", "Tailwind CSS", "图像处理", "UI验收"],
+    demoUrl: "/design-qa-tool.html",
+    sourceUrl: "https://github.com/susansheng/Home",
+    githubUrl: "https://github.com/susansheng/Home",
+    vercelUrl: "https://portfolio-website-seven-theta-54.vercel.app/design-qa-tool.html",
+    localPath: "/Users/sxsheng/Documents/代码/验收工具",
+    featured: true,
+  },
 ];
 
 export function getToolById(id: string): Tool | undefined {

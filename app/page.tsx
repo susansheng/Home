@@ -1,7 +1,8 @@
 import ToolCard from "@/components/ToolCard";
-import { tools } from "@/lib/tools";
+import { getFeaturedTools } from "@/lib/tools";
 
 export default function Home() {
+  const tools = getFeaturedTools();
   return (
     <div className="flex flex-col bg-dark">
       {/* Hero Section */}
