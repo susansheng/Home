@@ -26,7 +26,7 @@ export const tools: Tool[] = [
     githubUrl: "https://github.com/susansheng/Home",
     vercelUrl: "https://portfolio-website-seven-theta-54.vercel.app",
     localPath: "/Users/sxsheng/Documents/代码/汇总/portfolio-website",
-    featured: true,
+    featured: false,
   },
   {
     id: "ocr-tool",
