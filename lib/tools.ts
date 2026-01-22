@@ -44,6 +44,17 @@ export const tools: Tool[] = [
     sourceUrl: "#",
     featured: false,
   },
+  {
+    id: "ocr-font-recognition",
+    name: "OCR字体识别工具",
+    description: "智能OCR文字检测与字体识别系统，支持3473种Google Fonts识别",
+    longDescription: "基于PaddleOCR和Storia-AI font-classify的完整OCR+字体识别Pipeline。支持多语言文本检测（中英日韩），自动识别字体名称、字号、颜色等属性。提供Web界面和Python API，输出带标注的可视化图片和结构化JSON数据，适用于设计稿分析和字体研究。",
+    image: "/images/ocr-font-recognition.png",
+    tags: ["Python", "Flask", "PaddleOCR", "深度学习", "字体识别"],
+    demoUrl: "http://localhost:5000",
+    sourceUrl: "https://github.com/susansheng/ocr-font-recognition",
+    featured: true,
+  },
 ];
 
 export function getToolById(id: string): Tool | undefined {
