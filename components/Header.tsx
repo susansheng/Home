@@ -10,6 +10,7 @@ export default function Header() {
   const navLinks = [
     { href: "/", label: "首页" },
     { href: "/about", label: "关于我" },
+    { href: "/toollist", label: "工具清单" },
   ];
 
   return (

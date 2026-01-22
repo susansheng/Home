@@ -7,6 +7,9 @@ export interface Tool {
   tags: string[];
   demoUrl?: string;
   sourceUrl?: string;
+  vercelUrl?: string;
+  githubUrl?: string;
+  localPath?: string;
   featured?: boolean;
 }
 
@@ -20,6 +23,9 @@ export const tools: Tool[] = [
     tags: ["Python", "FastAPI", "OCR", "图像处理", "OpenCV"],
     demoUrl: "http://127.0.0.1:8000",
     sourceUrl: "https://github.com/susansheng/ocr-font-size-detection",
+    githubUrl: "https://github.com/susansheng/ocr-font-size-detection",
+    vercelUrl: "",
+    localPath: "/Users/sxsheng/Documents/代码/字号检测工具迭代版本",
     featured: true,
   },
   {
@@ -31,6 +37,9 @@ export const tools: Tool[] = [
     tags: ["Python", "Flask", "数据分析", "Pandas", "可视化"],
     demoUrl: "https://data-analysis-sigma-smoky.vercel.app",
     sourceUrl: "https://github.com/susansheng/Data_Analysis",
+    githubUrl: "https://github.com/susansheng/Data_Analysis",
+    vercelUrl: "https://data-analysis-sigma-smoky.vercel.app",
+    localPath: "/Users/sxsheng/Documents/代码/数据分析工具",
     featured: true,
   },
   {
@@ -42,6 +51,9 @@ export const tools: Tool[] = [
     tags: ["Python", "深度学习", "图像处理"],
     demoUrl: "http://127.0.0.1:5002",
     sourceUrl: "https://github.com/susansheng/smart-matting-tool",
+    githubUrl: "https://github.com/susansheng/smart-matting-tool",
+    vercelUrl: "",
+    localPath: "/Users/sxsheng/Documents/代码/抠图工具",
     featured: false,
   },
   {
@@ -53,6 +65,9 @@ export const tools: Tool[] = [
     tags: ["Python", "Flask", "PaddleOCR", "深度学习", "字体识别"],
     demoUrl: "http://localhost:5000",
     sourceUrl: "https://github.com/susansheng/ocr-font-recognition",
+    githubUrl: "https://github.com/susansheng/ocr-font-recognition",
+    vercelUrl: "",
+    localPath: "/Users/sxsheng/Documents/代码/其他杂七杂八的",
     featured: true,
   },
 ];
