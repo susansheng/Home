@@ -12,6 +12,18 @@ interface ToolCardProps {
 }
 
 export default function ToolCard({ tool, className }: ToolCardProps) {
+  const CardWrapper = tool.demoUrl && tool.demoUrl !== "#" ? "a" : "div";
+  const wrapperProps = tool.demoUrl && tool.demoUrl !== "#"
+    ? {
+        href: tool.demoUrl,
+        target: "_blank",
+        rel: "noopener noreferrer",
+        className: "block cursor-pointer"
+      }
+    : {
+        className: "block"
+      };
+
   return (
     <div
       className={cn(
@@ -19,8 +31,8 @@ export default function ToolCard({ tool, className }: ToolCardProps) {
         className
       )}
     >
-      {/* Clickable Card Wrapper */}
-      <Link href={`/tools/${tool.id}`} className="block">
+      {/* Clickable Card Wrapper - Opens demo directly */}
+      <CardWrapper {...wrapperProps}>
         {/* Tool Image */}
         <div className="aspect-video w-full overflow-hidden bg-dark-lighter">
           <Image
@@ -53,23 +65,11 @@ export default function ToolCard({ tool, className }: ToolCardProps) {
             ))}
           </div>
         </div>
-      </Link>
+      </CardWrapper>
 
-      {/* Links - Outside of main link to prevent nested links */}
+      {/* Links - Only show source code link */}
       <div className="px-6 pb-6 flex gap-3">
-        {tool.demoUrl && (
-          <Link
-            href={tool.demoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-            className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-light transition-colors"
-          >
-            在线演示
-            <ExternalLink className="h-4 w-4" />
-          </Link>
-        )}
-        {tool.sourceUrl && (
+        {tool.sourceUrl && tool.sourceUrl !== "#" && (
           <Link
             href={tool.sourceUrl}
             target="_blank"
