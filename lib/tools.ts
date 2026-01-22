@@ -29,8 +29,8 @@ export const tools: Tool[] = [
     longDescription: "基于Flask构建的数据分析Web应用，提供数据导入、清洗、分析和可视化功能。支持CSV、Excel等多种格式，内置多种统计分析方法和图表展示，适合数据分析师和研究人员使用。",
     image: "https://placehold.co/600x400/00ff87/0a0e1a?text=Data+Analysis",
     tags: ["Python", "Flask", "数据分析", "Pandas", "可视化"],
-    demoUrl: "http://127.0.0.1:5001",
-    sourceUrl: "https://github.com/susansheng/data-analysis-tool",
+    demoUrl: "https://data-analysis-sigma-smoky.vercel.app",
+    sourceUrl: "https://github.com/susansheng/Data_Analysis",
     featured: true,
   },
   {
