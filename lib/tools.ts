@@ -98,6 +98,20 @@ export const tools: Tool[] = [
     localPath: "/Users/sxsheng/Documents/代码/验收工具",
     featured: true,
   },
+  {
+    id: "ui-animation-playground",
+    name: "UI 动效 Playground",
+    description: "收集和展示市面上常见 UI 动效的灵感库，包含32种精选动效效果",
+    longDescription: "基于 React + TypeScript + Vite 构建的 UI 动效灵感库。收录按钮、文字、标签/徽章、卡片等4大类共32种精选动效，支持实时预览和分类筛选。纯 CSS 动画实现，代码简洁高效，帮助设计师和开发者快速找到合适的动效方案，可直接复制代码到项目中使用。",
+    image: "https://placehold.co/600x400/00ff87/0a0e1a?text=UI+Animation",
+    tags: ["React", "TypeScript", "Vite", "CSS Animations", "UI设计"],
+    demoUrl: "https://ui-animation-playground.vercel.app",
+    sourceUrl: "https://github.com/susansheng/ui-animation-playground",
+    githubUrl: "https://github.com/susansheng/ui-animation-playground",
+    vercelUrl: "https://ui-animation-playground.vercel.app",
+    localPath: "/Users/sxsheng/Documents/代码/lottie动画",
+    featured: true,
+  },
 ];
 
 export function getToolById(id: string): Tool | undefined {
