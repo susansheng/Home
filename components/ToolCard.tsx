@@ -12,6 +12,11 @@ interface ToolCardProps {
 }
 
 export default function ToolCard({ tool, className }: ToolCardProps) {
+  // Check if it's a local service
+  const isLocalService = tool.demoUrl &&
+    (tool.demoUrl.includes('localhost') ||
+     tool.demoUrl.includes('127.0.0.1'));
+
   const CardWrapper = tool.demoUrl && tool.demoUrl !== "#" ? "a" : "div";
   const wrapperProps = tool.demoUrl && tool.demoUrl !== "#"
     ? {
@@ -88,6 +93,15 @@ export default function ToolCard({ tool, className }: ToolCardProps) {
         <div className="absolute right-4 top-4">
           <span className="inline-flex items-center rounded-full bg-primary px-4 py-2 text-xs font-bold text-dark shadow-glow">
             精选
+          </span>
+        </div>
+      )}
+
+      {/* Local Service Badge */}
+      {isLocalService && (
+        <div className="absolute left-4 top-4">
+          <span className="inline-flex items-center rounded-full bg-orange-500 px-4 py-2 text-xs font-bold text-white shadow-lg">
+            本地
           </span>
         </div>
       )}
