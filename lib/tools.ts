@@ -35,7 +35,7 @@ export const tools: Tool[] = [
     longDescription: "基于轮廓检测和水平投影的高精度字号检测工具。引入750px设计基准，检测结果直接对应设计稿标准。支持多维度分析（字号、字重、字体、颜色、行高、字间距），提供PNG标注图和Markdown报告，适用于UI设计验收和规范检查。",
     image: "https://placehold.co/600x400/00ff87/0a0e1a?text=OCR+Font+Detector",
     tags: ["Python", "FastAPI", "OCR", "图像处理", "OpenCV"],
-    demoUrl: "http://127.0.0.1:8000",
+    demoUrl: "http://127.0.0.1:8003",
     sourceUrl: "https://github.com/susansheng/ocr-font-size-detection",
     githubUrl: "https://github.com/susansheng/ocr-font-size-detection",
     vercelUrl: "",
