@@ -112,6 +112,20 @@ export const tools: Tool[] = [
     localPath: "/Users/sxsheng/Documents/代码/lottie动画",
     featured: true,
   },
+  {
+    id: "image-boundary-checker",
+    name: "图片边界验收工具",
+    description: "自动检测图片是否符合边界规范，支持智能缩放和可视化边框叠加",
+    longDescription: "基于Python Flask和Pillow构建的图片规范检测工具。自动将任意尺寸图片缩放到300×200进行检测，逐像素检查是否在安全区域内。提供红色边框和绿色边界线的可视化叠加，直观显示超出边界的部分。支持拖拽上传，实时预览检测结果。",
+    image: "https://placehold.co/600x400/00ff87/0a0e1a?text=Image+Boundary+Checker",
+    tags: ["Python", "Flask", "Pillow", "图像处理", "Vercel"],
+    demoUrl: "https://image-boundary-checker.vercel.app",
+    sourceUrl: "https://github.com/susansheng/image-boundary-checker",
+    githubUrl: "https://github.com/susansheng/image-boundary-checker",
+    vercelUrl: "https://image-boundary-checker.vercel.app",
+    localPath: "/Users/sxsheng/Documents/代码/图片边界验收工具",
+    featured: true,
+  },
 ];
 
 export function getToolById(id: string): Tool | undefined {
